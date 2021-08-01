@@ -20,29 +20,30 @@ button:hover, input[type='submit']:hover {
 
 button {
   -webkit-appearance: none;
-  border-radius: 0; }
+  border-radius: 0;
+  padding: 10px 10px;
+  border: none;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+  font-weight: 200;
+  text-decoration: none;
+  font-family: "Spartan", arial, helvetica, sans-serif; }
   button.primary, button.primary:active, button.primary:focus {
-    text-decoration: none;
-    color: #548F91;
-    padding: 10px 10px;
     background-color: #444444;
-    transition: background-color 0.2s ease;
-    font-weight: 200;
-    color: #FFFFFF;
-    border: none;
-    font-size: 1em;
-    font-family: "Spartan", arial, helvetica, sans-serif; }
+    color: #FFFFFF; }
     button.primary:hover, button.primary:focus, button.primary:active:hover, button.primary:active:focus, button.primary:focus:hover, button.primary:focus:focus {
       background-color: #FFFFFF;
       color: #444444;
       transition: background-color 0.2s ease; }
   button.secondary {
-    font-weight: 700;
-    color: #548F91;
-    text-decoration: none; }
+    margin: 5px 0;
+    padding: 10px 10px 7px 10px;
+    font-size: 0.9em;
+    color: #444444; }
     button.secondary:hover, button.secondary:active, button.secondary:focus {
-      text-decoration: underline;
-      transition: text-decoration 0.2s ease; }
+      background-color: #444444;
+      color: #FFFFFF;
+      transition: background-color color 0.2s ease; }
 
 a:hover {
   cursor: pointer; }
@@ -51,6 +52,7 @@ a.primary, a.primary:active, a.primary:focus {
   text-decoration: none;
   color: #548F91;
   padding: 10px 10px;
+  margin: 0 10px 0 0;
   background-color: #444444;
   transition: background-color 0.2s ease;
   font-weight: 200;
@@ -62,6 +64,8 @@ a.primary, a.primary:active, a.primary:focus {
     background-color: #FFFFFF;
     color: #444444;
     transition: background-color 0.2s ease; }
+  a.primary:last-of-type, a.primary:active:last-of-type, a.primary:focus:last-of-type {
+    margin-right: 0; }
 a.secondary {
   font-weight: 700;
   color: #548F91;
@@ -150,12 +154,7 @@ input[type='submit'] {
       transition: text-decoration 0.2s ease; }
 
 h1 {
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h2 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 2em;
   margin-top: 0;
   margin-bottom: 30px; }
@@ -300,13 +299,8 @@ main {
   justify-content: space-between;
   flex-direction: column; }
 
-#logo_container #logo_box {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #30555C;
-  position: absolute;
-  top: 90px;
-  left: calc(10% - 5px); }
+#logo_container img {
+  width: 250px; }
 
 #hamburger {
   display: none; }
@@ -404,6 +398,6 @@ nav a {
       color: #FFFFFF; }
   .section_container:nth-child(even) {
     background-color: #FFFFFF;
-    color: #548F91; }
+    color: #444444; }
 
 /*# sourceMappingURL=main.css.map */

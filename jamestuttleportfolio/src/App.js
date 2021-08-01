@@ -1,12 +1,15 @@
+import React from 'react'
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './stylesheets/main.css';
-import MainHeader from './components/MainHeader';
+import Home from './components/views/Home';
+import DrawingUsingCss from './components/views/DrawingUsingCss';
 
-function App() {
-  return (
-    <div className="App">
-      <MainHeader title="Hi! I'm James" headerText="Platform Support Engineer jumping back into Frontend Web Development on the side. Welcome to my Portfolio."/>
-    </div>
-  );
+const App = () => {
+    return (
+      <div className="App">
+        <Home />
+      </div>
+    );
 }
 
 export default App;
