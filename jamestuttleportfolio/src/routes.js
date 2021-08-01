@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './components/views/Home';
 import DrawingUsingCss from './components/views/DrawingUsingCss';
 import References from './components/views/References';
+import NotFound from './components/views/NotFound';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 export const Routes = () => {
@@ -14,6 +15,7 @@ export const Routes = () => {
         </Route>
         <Route exact path="/Drawing-using-css" component={DrawingUsingCss} />
         <Route exact path="/References" component={References} />
+        <Route component={NotFound} />
       </Switch>
     </div>
   );

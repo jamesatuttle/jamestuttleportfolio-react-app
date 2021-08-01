@@ -4,11 +4,27 @@ import { Link } from 'react-router-dom';
 
 class MainHeader extends React.Component {
   render() {
-    const {title, headerText, displayHeaderImage} = this.props;
+    const {title, headerText, displayHeaderImage, link, hideScrollDown} = this.props;
 
     let headerImage;
     if (displayHeaderImage === true) {
       headerImage = <div className='image_container'></div>;
+    }
+
+    let pageLink = <a href='#contact_container' className='primary'>Contact Me</a>;
+
+    if (link) {
+      pageLink = link;
+    }
+
+    let scrollDown =
+      <div id='scroll_container'>
+        <span>Scroll down</span>
+        <div className='down_arrow'></div>
+      </div>;
+
+    if (hideScrollDown) {
+      scrollDown = <div></div>;
     }
 
     return (
@@ -40,14 +56,11 @@ class MainHeader extends React.Component {
           <div className='text_container'>
             <h1>{title}</h1>
             <p>{headerText}</p>
-            <a href='#contact_container' className='primary'>Contact Me</a>
+            {pageLink}
           </div>
           {headerImage}
         </div>
-        <div id='scroll_container'>
-          <span>Scroll down</span>
-          <div className='down_arrow'></div>
-        </div>
+        {scrollDown}
      </main>
     );
   }
