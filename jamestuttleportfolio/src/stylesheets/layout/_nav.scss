@@ -1,4 +1,5 @@
 nav {
+
   ul {
     list-style: none;
     margin: 0;
@@ -7,28 +8,18 @@ nav {
     li {
       display: inline-block;
       width: auto;
-      margin-right: 10px;
+      margin-right: 20px;
       font-size: 1em;
-
-      &.small_device {
-        display: none;
-      }
+      text-transform: uppercase;
 
       &:last-of-type {
         margin-right: 0;
       }
-    }
-  }
 
-  a {
-    text-decoration: none;
-    color: $third-color;
-    transition: text-decoration 0.2s ease;
-    padding: 4px 0;
-
-    &:hover, &:active, &:focus {
-      border-bottom: 1px solid $primary-text-color;
-      color: $primary-text-color;
+      a {
+        font-weight: 600;
+        color: $color-primary;
+      }
     }
   }
 }

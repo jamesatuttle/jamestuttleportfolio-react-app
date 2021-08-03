@@ -4,9 +4,10 @@
 
 @import "components/buttons";
 @import "components/links";
-@import "components/downarrow";
+@import "components/logo";
 @import "components/forms";
 @import "components/headings";
+@import "components/images";
 @import "components/paragraphs";
 
 @import "pages/drawingwithcss";
@@ -14,9 +15,11 @@
 @import "pages/about";
 @import "pages/contact";
 @import "pages/projects";
+@import "pages/home";
 
 @import "layout/body";
 @import "layout/header";
+@import "layout/main";
 @import "layout/footer";
 @import "layout/nav";
 @import "layout/pages";

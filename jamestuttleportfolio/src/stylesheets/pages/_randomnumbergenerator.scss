@@ -1,3 +1,16 @@
 .input_container {
   margin: 0 0 50px 0;
 }
+
+#random-number-generator {
+
+  p {
+    max-width: 700px;
+  }
+
+  h1 + p {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 0;
+  }
+}

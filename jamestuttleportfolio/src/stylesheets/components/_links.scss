@@ -3,24 +3,18 @@ a:hover {
 }
 
 a {
-  &.primary, &.primary:active, &.primary:focus {
-    text-decoration: none;
-    color: $secondary-text-color;
-    padding: 10px 10px;
-    margin: 0 10px 0 0;
-    background-color: $third-color;
-    transition: background-color 0.2s ease;
-    font-weight: 200;
-    color: $secondary-color;
-    border: none;
-    font-size: 1em;
-    font-family: $primary-font;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  font-size: 1em;
 
-    &:hover, &:active, &:focus {
-      background-color: $primary-text-color;
-      color: $third-color;
-      transition: background-color 0.2s ease;
-    }
+  &.primary, &.primary:active, &.primary:focus {
+    background-color: $color-button-primary;
+    color: $color-button-primary-text;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-right: 20px;
+    text-transform: uppercase;
 
     &:last-of-type {
       margin-right: 0;
@@ -28,13 +22,21 @@ a {
   }
 
   &.secondary  {
-    font-weight: 700;
-    color: $secondary-text-color;
-    text-decoration: none;
+    background-color: $color-button-secondary;
+    color: $color-button-secondary-text;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid $color-button-secondary-border;
+    margin-right: 20px;
+    text-transform: uppercase;
 
-    &:hover, &:active, &:focus {
-      text-decoration: underline;
-      transition: text-decoration 0.2s ease;
+    &:last-of-type {
+      margin-right: 0;
     }
+  }
+
+  &.text {
+    text-decoration: underline;
+    color: $color-link;
   }
 }

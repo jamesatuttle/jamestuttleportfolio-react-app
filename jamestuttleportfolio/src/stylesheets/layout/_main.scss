@@ -1,0 +1,9 @@
+main {
+  min-height: calc(100vh - 100px);
+  padding: 50px 200px;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}

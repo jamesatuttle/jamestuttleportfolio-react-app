@@ -1,0 +1,22 @@
+#home {
+
+
+    #text-with-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin-right: 5%;
+        }
+
+        p {
+            margin: 20px 0 30px 0;
+            font-size: 1.1em;
+            max-width: 60ch;
+        }
+    }
+}

@@ -1,23 +1,13 @@
 import React from 'react'
-import MainHeader from '../MainHeader';
-import Contact from '../Contact';
-import Footer from '../Footer';
-import About from '../About';
-import Projects from '../Projects';
 import DrawingsContainer from '../DrawingsContainer';
+import PageLayout from './PageLayout';
 
-class Home extends React.Component {
+class DrawingUsingCss extends React.Component {
   render() {
     return (
-      <div>
-        <MainHeader title="Drawings Using CSS" headerText="A collection of drawings I've made using pure CSS to practice my skills. Take a look!" displayHeaderImage={false} />
-        <DrawingsContainer />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      <PageLayout pageContents={<DrawingsContainer />} page="drawings-using-css"/>
     );
   }
 };
 
-export default Home
+export default DrawingUsingCss

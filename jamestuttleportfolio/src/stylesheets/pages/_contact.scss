@@ -1,3 +1,19 @@
 #contact_container a {
   word-break: break-word;
 }
+
+#contact {
+  h1 + p {
+    font-size: 1.3em;
+    font-weight: 500;
+    max-width: 50ch;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  #emailAddress {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: $color-link;
+  }
+}
