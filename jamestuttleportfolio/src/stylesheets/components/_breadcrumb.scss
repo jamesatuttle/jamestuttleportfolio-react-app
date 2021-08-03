@@ -1,0 +1,14 @@
+.breadcrumb-navigation {
+    a {
+        padding: 0 10px 0 0;
+        color: $color-breadcrumb-link;
+
+        &::after {
+            padding-left: 10px;
+            content: "/";
+            color: $color-breadcrumb-line;
+        }
+    }
+
+    margin-bottom: 30px;
+}

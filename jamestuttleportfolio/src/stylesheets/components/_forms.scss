@@ -1,0 +1,57 @@
+form {
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+label {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid $color-input-border;
+    width: calc(100% - 40px);
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    width: auto;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    font-size: 1em;
+    background-color: $color-button-submit;
+    color: $color-button-submit-text;
+    margin-right: 20px;
+    text-transform: uppercase;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.input_container {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .validation {
+        min-height: 20px;
+        line-height: 20px;
+        font-size: 0.8em;
+        padding: 0;
+        margin: 5px 0 0 0;
+    }
+}

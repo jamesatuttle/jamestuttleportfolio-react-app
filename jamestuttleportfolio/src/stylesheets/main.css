@@ -15,6 +15,16 @@
   100% {
     top: 15px;
     opacity: 1; } }
+.breadcrumb-navigation {
+  margin-bottom: 30px; }
+  .breadcrumb-navigation a {
+    padding: 0 10px 0 0;
+    color: #628D90; }
+    .breadcrumb-navigation a::after {
+      padding-left: 10px;
+      content: "/";
+      color: #575757; }
+
 a:hover {
   cursor: pointer; }
 
@@ -49,6 +59,49 @@ a {
 #logo {
   font-weight: 900;
   font-size: 1.6em; }
+
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+label {
+  margin-bottom: 20px;
+  width: 100%; }
+
+input {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #575757;
+  width: calc(100% - 40px);
+  margin-top: 10px; }
+
+input[type=submit] {
+  width: auto;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  font-size: 1em;
+  background-color: #628D90;
+  color: #FFFFFF;
+  margin-right: 20px;
+  text-transform: uppercase; }
+  input[type=submit]:last-of-type {
+    margin-right: 0; }
+  input[type=submit]:hover {
+    cursor: pointer; }
+
+.input_container {
+  margin-bottom: 30px; }
+  .input_container:last-of-type {
+    margin-bottom: 0; }
+  .input_container .validation {
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 5px 0 0 0; }
 
 h1 {
   font-weight: 900;
@@ -92,15 +145,22 @@ p {
   .drawing_and_info_container:nth-of-type(3n) .container {
     background-color: RGB(113, 178, 156); }
 
-.input_container {
-  margin: 0 0 50px 0; }
-
+#random-number-generator #form-container {
+  margin: 50px 0 0 0;
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: 1fr 1fr; }
+  #random-number-generator #form-container form {
+    width: 400px; }
 #random-number-generator p {
   max-width: 700px; }
 #random-number-generator h1 + p {
   font-size: 1.3em;
   font-weight: 500;
   margin-top: 0; }
+#random-number-generator #output {
+  font-size: 2em;
+  font-weight: 700; }
 
 #about_container {
   display: grid;

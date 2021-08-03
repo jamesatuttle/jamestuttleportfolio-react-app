@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class RandomNumberGenerator extends React.Component {
 
   render() {
     return (
       <section>
+        <div className='breadcrumb-navigation'><Link to='/projects'>Projects</Link><span>Random Number Generator</span></div>
         <h1>RANDOM NUMBER GENERATOR</h1>
         <p>A simple tool built in Javascript which takes in a minimum and maximum number and produces a random number between, making use of React state.</p>
         <p>There is also a JSON collection in the background with random number facts/trivia, if you hit the right number you'll get a fact! Take a look and have a play around.</p>
         <p>Javascript code can be found on GitHub <a href='https://github.com/jamesatuttle/jamestuttleportfolio/blob/main/scripts/random-number-generator.js' className="text">here</a>.</p>
-        <div>
+        <div id='form-container'>
           <form action="#" onSubmit="generateRandomNumber();return false">
             <fieldset>
               <div className='input_container'>
@@ -23,7 +25,7 @@ class RandomNumberGenerator extends React.Component {
                 <p className='validation'></p>
               </div>
               <div className='input_container'>
-                <input type='submit' value='Generate!' className='primary'/>
+                <input type='submit' value='Generate random number'/>
               </div>
             </fieldset>
           </form>
