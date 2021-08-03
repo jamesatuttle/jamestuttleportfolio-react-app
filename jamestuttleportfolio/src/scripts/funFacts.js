@@ -1,4 +1,4 @@
-facts = `[
+const facts = `[
   {"number": "4", "fact": "The only number spelled with the same number of letters as itself"},
   {"number": "7", "fact": "The opposite sides of a six sided die always adds up to 7"},
   {"number": "9", "fact": "It's said that cats have 9 lives"},
@@ -16,3 +16,5 @@ facts = `[
   {"number": "300000", "fact": "The chances of being struck by lightning are 300,000 to one"},
   {"number": "31536000", "fact": "There are 31,536,000 seconds in a year"}
 ]`;
+
+export default facts;

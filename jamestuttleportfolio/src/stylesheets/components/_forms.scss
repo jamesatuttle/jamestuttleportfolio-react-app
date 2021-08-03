@@ -38,6 +38,11 @@ input[type=submit] {
     &:hover {
         cursor: pointer;
     }
+    
+    &:disabled {
+        cursor: default;
+        opacity: 0.5;
+    }
 }
 
 .input_container {

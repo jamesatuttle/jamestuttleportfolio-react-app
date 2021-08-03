@@ -91,6 +91,9 @@ input[type=submit] {
     margin-right: 0; }
   input[type=submit]:hover {
     cursor: pointer; }
+  input[type=submit]:disabled {
+    cursor: default;
+    opacity: 0.5; }
 
 .input_container {
   margin-bottom: 30px; }
