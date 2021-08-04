@@ -1,10 +1,9 @@
 import React from 'react';
 import ProjectTile from './ProjectTile';
+import { Link } from 'react-router-dom';
 
 class Projects extends React.Component {
   render() {
-    const {changePage} = this.props
-
     return (
         <div id='projects_tiles_container'>
           <h1>PROJECTS</h1>

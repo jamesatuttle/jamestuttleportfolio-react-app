@@ -15,7 +15,7 @@ class DrawingsContainer extends React.Component {
           <h2>Monitor</h2>
           <div className='image-with-text'>
             <div className='container'>
-              <img id='monitor_image' src={monitor}/>
+              <img id='monitor_image' alt="monitor created using css" src={monitor}/>
             </div>
             <div className='text'>
               <p>Find the code on codepen <a className='text' href='https://codepen.io/jamestuttle/pen/LYyebyN'>here</a>.</p>
@@ -27,7 +27,7 @@ class DrawingsContainer extends React.Component {
           <h2>Coffee</h2>
           <div className='image-with-text'>
             <div className='container'>
-              <img id='coffee_cup_image' src={coffee}/>
+              <img id='coffee_cup_image' alt="coffee cup with coffee beans created using css" src={coffee}/>
             </div>
             <div className='text'>
               <p>Find the code on codepen <a className='text' href='https://codepen.io/jamestuttle/pen/QWvaGdV'>here</a>.</p>
@@ -39,7 +39,7 @@ class DrawingsContainer extends React.Component {
           <h2>Bear</h2>
           <div className='image-with-text'>
             <div className='container'>
-              <img id='bear_image' src={bear}/>
+              <img id='bear_image' alt="bear created using css" src={bear}/>
             </div>
             <div className='text'>
               <p>Find the code on codepen <a className='text' href='https://codepen.io/jamestuttle/pen/VwbymjK'>here</a>.</p>
