@@ -135,15 +135,6 @@ p {
   @media screen and (max-width: 930px) {
     #drawings-using-css h1 + p {
       font-size: 1.1em; } }
-#drawings-using-css .image-with-text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px; }
-  @media screen and (max-width: 1025px) {
-    #drawings-using-css .image-with-text {
-      display: flex;
-      flex-direction: column;
-      grid-gap: 0; } }
 
 .drawing_and_info_container {
   margin-bottom: 50px; }
@@ -448,6 +439,16 @@ body, html {
   @media screen and (max-width: 430px) {
     body, html {
       font-size: 14px; } }
+
+.image-with-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px; }
+  @media screen and (max-width: 1025px) {
+    .image-with-text {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 0; } }
 
 header {
   display: flex;

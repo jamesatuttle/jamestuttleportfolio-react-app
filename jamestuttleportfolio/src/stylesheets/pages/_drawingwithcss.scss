@@ -10,18 +10,6 @@
       font-size: 1.1em;
     }
   }
-
-  .image-with-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-
-    @media screen and (max-width: 1025px) {
-      display: flex;
-      flex-direction: column;
-      grid-gap: 0;
-    }
-  }
 }
 
 .drawing_and_info_container {

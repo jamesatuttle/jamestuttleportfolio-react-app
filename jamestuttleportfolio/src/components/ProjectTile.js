@@ -5,7 +5,7 @@ class ProjectTile extends React.Component {
   render() {
     const {title, description, link} = this.props;
 
-    const projectLink = 'projects/' + this.props.link;
+    const projectLink = 'projects/' + link;
 
     return (
       <div className='project_box'>
