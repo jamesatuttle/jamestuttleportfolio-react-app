@@ -6,4 +6,12 @@ body, html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 14px;
+  }
 }

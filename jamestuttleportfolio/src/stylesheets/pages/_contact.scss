@@ -15,5 +15,17 @@
     font-weight: 700;
     font-size: 1.8em;
     color: $color-link;
+
+    @media screen and (max-width: 930px) {
+      font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.2em;
+    }
+
+    @media screen and (max-width: 360px) {
+      font-size: 1em;
+    }
   }
 }

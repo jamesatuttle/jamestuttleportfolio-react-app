@@ -12,9 +12,7 @@ class NotFound extends React.Component {
           <Header />
             <div id='text-with-image'>
               <div class='illustration'>
-                <div class='circle'>
-                  <img id='monitor_image' alt="monitor created using css" src={monitor}/>
-                </div>
+                <img id='monitor_image' alt="monitor created using css" src={monitor}/>
               </div>
               <div id='text-container'>
                 <h1>Page Not Found</h1>

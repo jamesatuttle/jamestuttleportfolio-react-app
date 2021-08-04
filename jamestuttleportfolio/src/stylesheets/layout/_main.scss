@@ -1,9 +1,17 @@
 main {
   min-height: calc(100vh - 100px);
-  padding: 50px 200px;
+  padding: 50px 10%;
   background-color: $color-background;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+
+  @media screen and (max-width: 930px) {
+    padding: 50px 10%;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 50px 7%;
+  }
 }

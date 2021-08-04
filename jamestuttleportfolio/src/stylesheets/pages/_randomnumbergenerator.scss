@@ -12,6 +12,31 @@
 
     form {
       width: 400px;
+
+      @media screen and (max-width: 1050px) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 450px) {
+        width: 100%;
+
+        input[type='submit'] {
+          width: 100%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 740px) {
+      display: flex;
+      flex-direction: column;
+
+      .input_container {
+        margin-bottom: 10px;
+      }
+
+      .output_container {
+        margin-top: 50px;
+      }
     }
   }
 
@@ -23,6 +48,10 @@
     font-size: 1.3em;
     font-weight: 500;
     margin-top: 0;
+
+    @media screen and (max-width: 930px) {
+      font-size: 1.1em;
+    }
   }
 
   #output {

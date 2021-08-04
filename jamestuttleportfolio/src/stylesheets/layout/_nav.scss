@@ -20,6 +20,20 @@ nav {
         font-weight: 600;
         color: $color-primary;
       }
+
+      @media screen and (max-width: 800px) {
+        margin-right: 6%;
+      }
+
+      @media screen and (max-width: 375px) {
+        margin-right: 5%;
+        font-size: 0.9em;
+      }
     }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -5,10 +5,33 @@
         justify-content: flex-start;
         align-items: center;
 
+        @media screen and (max-width: 930px) {
+            flex-direction: column;
+        }
+
         img {
             width: 300px;
-            height: 300px;
+            height: auto;
             margin-right: 5%;
+
+            @media screen and (max-width: 1200px) {
+                width: 250px;
+            }
+
+            @media screen and (max-width: 930px) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+
+            @media screen and (max-width: 430px) {
+                width: 200px;
+            }
+        }
+
+        #text-container {
+            @media screen and (max-width: 930px) {
+                text-align: center;
+            }
         }
 
         p {

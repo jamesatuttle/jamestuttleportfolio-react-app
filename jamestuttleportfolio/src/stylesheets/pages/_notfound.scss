@@ -1,29 +1,59 @@
 #notfound {
+
     #text-with-image {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
 
+        @media screen and (max-width: 930px) {
+            flex-direction: column;
+        }
+
         div.illustration {
             width: 300px;
+            min-width: 300px;
             height: 300px;
             margin-right: 5%;
 
-            .circle {
-                width: 300px;
-                height: 300px;
-                border-radius: 300px;
-                background-color: $color-notfound-circle;
-                color: $color-notfound-circle-text;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            border-radius: 300px;
+            background-color: $color-notfound-circle;
+            color: $color-notfound-circle-text;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-                img {
-                    width: 200px;
+            img {
+                width: 200px;
+
+                @media screen and (max-width: 1200px) {
+                    width: 150px;
+                    height: auto;
                 }
+            }
+
+            @media screen and (max-width: 1200px) {
+                min-width: 250px;
+                width: 250px;
+                height: 250px;
+            }
+
+            @media screen and (max-width: 930px) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+
+            @media screen and (max-width: 430px) {
+                min-width: 200px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        #text-container {
+            @media screen and (max-width: 930px) {
+                text-align: center;
             }
         }
 

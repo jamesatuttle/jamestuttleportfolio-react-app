@@ -22,4 +22,12 @@ footer {
       }
     }
   }
+
+  @media screen and (max-width: 1175px) {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 930px) {
+    text-align: center;
+  }
 }
