@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 class Home extends React.Component {
   render() {
     return (
-        <main id='home' className='dark_mode'>
+        <main id='home'>
             <Header />
             <div id='text-with-image'>
               <img id='image_me' className='circle_image' src={meImage} alt="logo" />

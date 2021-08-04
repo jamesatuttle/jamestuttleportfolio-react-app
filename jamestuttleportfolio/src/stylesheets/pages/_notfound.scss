@@ -1,0 +1,36 @@
+#notfound {
+    #text-with-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        div.illustration {
+            width: 300px;
+            height: 300px;
+            margin-right: 5%;
+
+            .circle {
+                width: 300px;
+                height: 300px;
+                border-radius: 300px;
+                background-color: $color-notfound-circle;
+                color: $color-notfound-circle-text;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+        p {
+            margin: 20px 0 30px 0;
+            font-size: 1.1em;
+            max-width: 60ch;
+        }
+    }
+}
