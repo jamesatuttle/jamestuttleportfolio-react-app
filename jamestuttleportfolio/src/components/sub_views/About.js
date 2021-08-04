@@ -1,7 +1,7 @@
 import React from 'react'
-import meImage from '../assets/images/me.JPG';
-import newcastleImage from '../assets/images/newcastle.JPG';
-import boulderingImage from '../assets/images/bouldering.jpeg';
+import meImage from '../../assets/images/me.JPG';
+import newcastleImage from '../../assets/images/newcastle.JPG';
+import boulderingImage from '../../assets/images/bouldering.jpeg';
 
 class About extends React.Component {
   render() {

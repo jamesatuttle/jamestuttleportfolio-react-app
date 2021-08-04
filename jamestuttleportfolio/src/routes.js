@@ -18,9 +18,9 @@ export const Routes = () => {
         </Route>
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/projects" component={ProjectsPage} />
+          <Route exact path="/projects/drawing-using-css" component={DrawingUsingCss} />
+          <Route exact path="/projects/random-number-generator" component={GenerateRandomNumber} />
         <Route exact path="/contact" component={ContactPage} />
-        <Route exact path="/drawing-using-css" component={DrawingUsingCss} />
-        <Route exact path="/random-number-generator" component={GenerateRandomNumber} />
         <Route component={NotFound} />
       </Switch>
     </div>

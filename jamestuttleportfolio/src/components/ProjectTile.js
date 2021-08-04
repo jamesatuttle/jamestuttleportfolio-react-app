@@ -3,23 +3,15 @@ import { Link } from 'react-router-dom';
 
 class ProjectTile extends React.Component {
   render() {
-    const {title, description, tag, link} = this.props;
+    const {title, description, link} = this.props;
 
-    let classes = 'project_box';
-    let pageLink;
-
-    if (tag === 'coming soon') {
-      classes += ' coming_soon';
-    } else if (tag === 'new') {
-      classes += ' new';
-      pageLink = <Link className='text' to={link}>Find out more</Link>;
-    }
+    const projectLink = 'projects/' + this.props.link;
 
     return (
-      <div className={classes}>
+      <div className='project_box'>
         <h2>{title}</h2>
         <p>{description}</p>
-        {pageLink}
+        <Link className='text' to={projectLink}>Find out more</Link>
       </div>
     );
   }

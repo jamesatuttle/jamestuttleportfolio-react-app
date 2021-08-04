@@ -4,12 +4,12 @@ import Footer from '../Footer';
 
 class PageLayout extends React.Component {
   render() {
-    const {pageContents, page} = this.props
+    const {page} = this.props
 
     return (
-      <main id={page} className='light_theme'>
+      <main id={page}>
         <Header />
-        {pageContents}
+        {this.props.children}
         <Footer />
       </main>
     );

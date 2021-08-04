@@ -1,15 +1,13 @@
 import React from 'react'
-import Header from '../Header';
-import Footer from '../Footer';
 import meImage from '../../assets/images/me_2.jpeg';
 import { Link } from 'react-router-dom';
+import PageLayout from './PageLayout';
 
 class Home extends React.Component {
   render() {
     return (
-        <main id='home'>
-            <Header />
-            <div id='text-with-image'>
+        <PageLayout page="home">
+          <div id='text-with-image'>
               <img id='image_me' className='circle_image' src={meImage} alt="logo" />
               <div id='text-container'>
                 <h1>Hi! I’m James. Website Developer.</h1>
@@ -17,8 +15,7 @@ class Home extends React.Component {
                 <Link className='primary' to='/projects'>See my projects</Link><Link className='secondary' to='/contact'>Contact Me</Link>
               </div>
             </div>
-            <Footer />
-        </main>
+        </PageLayout>
     );
   }
 };

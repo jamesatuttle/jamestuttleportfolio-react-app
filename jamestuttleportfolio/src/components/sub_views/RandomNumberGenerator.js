@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import facts from '../scripts/funFacts';
+import facts from '../../scripts/funFacts';
 
 class RandomNumberGenerator extends React.Component {
   constructor(props) {

@@ -1,11 +1,11 @@
 import React from 'react'
-import Contact from '../Contact';
+import Contact from '../sub_views/Contact';
 import PageLayout from './PageLayout';
 
 class ContactPage extends React.Component {
   render() {
     return (
-      <PageLayout pageContents={<Contact />} page="contact"/>
+      <PageLayout page="contact"><Contact /></PageLayout>
     );
   }
 };

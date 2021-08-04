@@ -1,11 +1,11 @@
 import React from 'react'
-import About from '../About';
+import About from '../sub_views/About';
 import PageLayout from './PageLayout';
 
 class AboutPage extends React.Component {
   render() {
     return (
-      <PageLayout pageContents={<About />} page="about" />
+      <PageLayout page="about"><About /></PageLayout>
     );
   }
 };

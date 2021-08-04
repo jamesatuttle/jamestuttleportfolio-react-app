@@ -1,12 +1,12 @@
 import React from 'react'
-import Projects from '../Projects';
+import Projects from '../sub_views/Projects';
 import PageLayout from './PageLayout';
 
 class ProjectsPage extends React.Component {
   render() {
     return (
       <div>
-        <PageLayout pageContents={<Projects />} page="projects" />
+        <PageLayout page="projects" ><Projects /></PageLayout>
       </div>
     );
   }
