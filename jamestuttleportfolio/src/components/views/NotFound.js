@@ -8,7 +8,7 @@ class NotFound extends React.Component {
     return (
       <PageLayout page="notfound">
         <div id='text-with-image'>
-          <div class='illustration'>
+          <div className='illustration'>
             <img id='monitor_image' alt="monitor created using css" src={monitor}/>
           </div>
           <div id='text-container'>
