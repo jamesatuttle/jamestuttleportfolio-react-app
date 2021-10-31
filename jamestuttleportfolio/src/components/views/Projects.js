@@ -26,26 +26,6 @@ class Projects extends React.Component {
               <p>September 2021</p>
               <Link to='/projects/drawing-using-css'>Take a look</Link>
           </div>
-          <div className='project_tile'>
-              <h3>Drawings using css</h3><Css3/>
-              <p>September 2021</p>
-              <Link to='/projects/drawing-using-css'>Take a look</Link>
-          </div>
-          <div className='project_tile'>
-              <h3>Drawings using css</h3><Css3/>
-              <p>September 2021</p>
-              <Link to='/projects/drawing-using-css'>Take a look</Link>
-          </div>
-          <div className='project_tile'>
-              <h3>Drawings using css</h3><Css3/>
-              <p>September 2021</p>
-              <Link to='/projects/drawing-using-css'>Take a look</Link>
-          </div>
-          <div className='project_tile'>
-              <h3>Drawings using css</h3><Css3/>
-              <p>September 2021</p>
-              <Link to='/projects/drawing-using-css'>Take a look</Link>
-          </div>
         </div>
         <div className='buttonContainer'>
           <a className='button_style primary' href='/projects'>see all projects</a>

@@ -229,6 +229,20 @@ section#projects {
     text-align: center;
     margin-top: 75px; }
 
+.projectSection {
+  margin-bottom: 50px; }
+  .projectSection:last-of-type {
+    margin-bottom: 0; }
+  .projectSection svg:first-of-type {
+    height: 1.3em;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: -2px;
+    color: #75D3C3; }
+  .projectSection h3 {
+    margin-bottom: 10px;
+    display: inline-block; }
+
 .projects_container {
   display: flex;
   gap: 20px;
@@ -368,7 +382,7 @@ section#contact {
 
 footer {
   background-color: #102D40;
-  padding: 2% 20%;
+  padding: 2% 15%;
   color: white; }
   footer a {
     text-transform: uppercase;
