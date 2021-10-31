@@ -1,7 +1,25 @@
 section#about {
-    // width: 50%;
+  background-image: url(../assets/images/background-full-2.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: calc(100vh - 200px);
 
-    p {
-      font-size: 1.2em;
-    }
+  svg {
+    height: 1.3em;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: baseline;
   }
+
+  h3 {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0 0 40px 0;
+    padding: 0;
+    max-width: 60%;
+  }
+}

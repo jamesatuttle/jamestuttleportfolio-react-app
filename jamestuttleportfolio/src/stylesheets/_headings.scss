@@ -1,17 +1,31 @@
 h2 {
-    text-transform: uppercase;
-    font-size: 2.3em;
-    color: #75D3C3;
-    padding: 0 0 50px 0;
-    margin: 0 0 0 0;
+  text-transform: uppercase;
+  font-size: 2.3em;
+  color: #75D3C3;
+  padding: 0 0 50px 0;
+  margin: 0 0 0 0;
 
-    &::after {
-      content: "";
-      display: block;
-      height: 5px;
-      width: 30px;
-      top: 10px;
-      position: relative;
-      background-color: #75D3C3;
-    }
+  &::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 30px;
+    top: 10px;
+    position: relative;
+    background-color: #75D3C3;
   }
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #75D3C3;
+  font-size: 1.5em;
+  padding: 0 0 5px 0;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.1em;
+  padding: 0 0 0 0;
+  margin: 0;
+}
