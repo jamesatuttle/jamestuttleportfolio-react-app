@@ -1,8 +1,8 @@
 import React from 'react'
-import PageLayout from '../views/PageLayout';
-import website_version_one from '../../assets/images/website_version_one.png';
-import website_version_two from '../../assets/images/website_version_two.png';
-import website_version_three from '../../assets/images/website_version_three.png';
+import PageLayout from '../PageLayout';
+import website_version_one from '../../../assets/images/website_version_one.png';
+import website_version_two from '../../../assets/images/website_version_two.png';
+import website_version_three from '../../../assets/images/website_version_three.png';
 import { Link } from 'react-router-dom';
 
 class ReactAppProjectPage extends React.Component {

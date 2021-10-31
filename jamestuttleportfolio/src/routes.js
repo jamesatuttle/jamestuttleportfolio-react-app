@@ -1,11 +1,11 @@
 import React from 'react';
 import Home from './components/views/Home';
 import ProjectsFull from './components/views/ProjectsFull';
-import DrawingUsingCss from './components/projectsPages/DrawingUsingCss';
-import GenerateRandomNumber from './components/projectsPages/GenerateRandomNumber';
+import DrawingUsingCss from './components/views/projectsPages/DrawingUsingCss';
+import GenerateRandomNumber from './components/views/projectsPages/GenerateRandomNumber';
 import NotFound from './components/views/NotFound';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import ReactAppProjectPage from './components/projectsPages/ReactAppProjectPage';
+import ReactAppProjectPage from './components/views/projectsPages/ReactAppProjectPage';
 
 export const Routes = () => {
   return (

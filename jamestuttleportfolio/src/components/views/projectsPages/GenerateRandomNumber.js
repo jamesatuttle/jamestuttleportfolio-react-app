@@ -1,7 +1,7 @@
 import React from 'react'
-import PageLayout from '../views/PageLayout';
+import PageLayout from '../PageLayout';
 import { Link } from 'react-router-dom';
-import facts from '../../scripts/funFacts';
+import facts from '../../../scripts/funFacts';
 
 class GenerateRandomNumber extends React.Component {
   constructor(props) {
