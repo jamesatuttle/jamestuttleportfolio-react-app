@@ -62,7 +62,7 @@ class Contact extends React.Component {
           <label htmlFor='message'>Message</label>
           <textarea id='message' name='message' value={this.state.message} onChange={this.handleInputChange} required></textarea>
 
-          <input type='submit' value="Send Email" className='button_style primary'/>
+          <input type='submit' value="Send Email" className='primary'/>
           {this.state.emailSentSuccessful ? <span><p>Email sent successfully</p><SmileyFace /></span> : ''}
           {this.state.emailError ? <p>Woops, there seems to be a problem. Try again but if it continues, email me at <a href="mailto:contact@jamestuttleportfolio.co.uk">contact@jamestuttleportfolio.co.uk</a></p> : ''}
         </form>
