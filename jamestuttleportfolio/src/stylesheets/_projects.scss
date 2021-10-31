@@ -1,0 +1,34 @@
+section#projects {
+    .projects_container {
+
+      .project_tile {
+        margin-bottom: 48px;
+
+        svg {
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 16px;
+          color: #75D3C3;
+        }
+
+        h3 {
+          font-size: 1.5em;
+          line-height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0;
+          margin: 0;
+          text-transform: uppercase;
+
+          a {
+            color: #75D3C3;
+          }
+        }
+
+        &:last-of-type {
+          margin-bottom: 64px;
+        }
+      }
+    }
+  }

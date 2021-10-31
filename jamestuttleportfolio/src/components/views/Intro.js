@@ -1,4 +1,6 @@
 import React from 'react'
+import introImage from '../../assets/images/introImage.jpg';
+
 
 class Intro extends React.Component {
   render() {

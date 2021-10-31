@@ -8,7 +8,7 @@ body, html {
   font-weight: normal;
   color: #30587A; }
 
-a.button_style, input[type='submit'].button_style {
+input[type='submit'] {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
@@ -18,23 +18,56 @@ a.button_style, input[type='submit'].button_style {
   border-radius: 12px;
   margin-right: 10px;
   transition-duration: 0.3s; }
-  a.button_style:last-child, input[type='submit'].button_style:last-child {
+  input[type='submit']:last-child {
     margin-right: 0; }
-  a.button_style.primary, input[type='submit'].button_style.primary {
+  input[type='submit'].primary {
     background-color: #75D3C3;
     border: 2px solid #75D3C3;
     box-shadow: 2px 2px #CAEEE8; }
-    a.button_style.primary:hover, a.button_style.primary:focus, input[type='submit'].button_style.primary:hover, input[type='submit'].button_style.primary:focus {
+    input[type='submit'].primary:hover, input[type='submit'].primary:focus {
       background-color: transparent;
       color: #75D3C3;
       cursor: pointer;
       transition-duration: 0.3s;
       box-shadow: 5px 5px #CAEEE8; }
-  a.button_style.secondary, input[type='submit'].button_style.secondary {
+  input[type='submit'].secondary {
     background-color: #30587A;
     border: 2px solid #30587A;
     box-shadow: 2px 2px #C7D5DE; }
-    a.button_style.secondary:hover, a.button_style.secondary:focus, input[type='submit'].button_style.secondary:hover, input[type='submit'].button_style.secondary:focus {
+    input[type='submit'].secondary:hover, input[type='submit'].secondary:focus {
+      background-color: transparent;
+      color: #30587A;
+      cursor: pointer;
+      transition-duration: 0.3s;
+      box-shadow: 5px 5px #C7D5DE; }
+
+a.button_style {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  margin-right: 10px;
+  transition-duration: 0.3s; }
+  a.button_style:last-child {
+    margin-right: 0; }
+  a.button_style.primary {
+    background-color: #75D3C3;
+    border: 2px solid #75D3C3;
+    box-shadow: 2px 2px #CAEEE8; }
+    a.button_style.primary:hover, a.button_style.primary:focus {
+      background-color: transparent;
+      color: #75D3C3;
+      cursor: pointer;
+      transition-duration: 0.3s;
+      box-shadow: 5px 5px #CAEEE8; }
+  a.button_style.secondary {
+    background-color: #30587A;
+    border: 2px solid #30587A;
+    box-shadow: 2px 2px #C7D5DE; }
+    a.button_style.secondary:hover, a.button_style.secondary:focus {
       background-color: transparent;
       color: #30587A;
       cursor: pointer;
@@ -90,6 +123,54 @@ section#intro {
       border-bottom: 2px solid #30587A; }
     section#intro .intro .button_container {
       text-align: center; }
+
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0); }
+  40%, 60% {
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+.animated-title {
+  height: 40vh;
+  width: 100%; }
+
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%; }
+
+.animated-title > div div {
+  font-size: 3em;
+  padding: 10px 0;
+  position: absolute; }
+
+.animated-title > div div .text {
+  display: block; }
+
+.animated-title > div.text-top-container {
+  width: 100%;
+  margin: 0;
+  top: 0; }
+
+.animated-title > div.text-top-container div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+  width: 100%; }
+
+.animated-title > div.text-bottom-container {
+  bottom: 0; }
+
+.animated-title > div.text-bottom-container div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%); }
 
 nav {
   display: flex;
@@ -272,53 +353,5 @@ footer {
 .bigger {
   font-size: 1.1em;
   font-weight: bold; }
-
-@keyframes showTopText {
-  0% {
-    transform: translate3d(0, 100%, 0); }
-  40%, 60% {
-    transform: translate3d(0, 100%, 0); }
-  100% {
-    transform: translate3d(0, 0, 0); } }
-.animated-title {
-  height: 40vh;
-  width: 100%; }
-
-.animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%; }
-
-.animated-title > div div {
-  font-size: 3em;
-  padding: 10px 0;
-  position: absolute; }
-
-.animated-title > div div .text {
-  display: block; }
-
-.animated-title > div.text-top-container {
-  width: 100%;
-  margin: 0;
-  top: 0; }
-
-.animated-title > div.text-top-container div {
-  animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  bottom: 0;
-  transform: translate(0, 100%);
-  width: 100%; }
-
-.animated-title > div.text-bottom-container {
-  bottom: 0; }
-
-.animated-title > div.text-bottom-container div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%); }
 
 /*# sourceMappingURL=main.css.map */

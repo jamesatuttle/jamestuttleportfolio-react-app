@@ -1,0 +1,78 @@
+section#intro {
+    margin: 25px 10% 0 10%;
+    padding: 0;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    border-bottom: 0;
+  
+    .intro {
+      margin: 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 45%;
+      font-weight: bold;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  
+      h2 {
+        font-size: 4em;
+        padding: 0;
+        margin: 0 auto 64px auto;
+        border-bottom: 2px solid #30587A;
+      }
+  
+      .button_container {
+        text-align: center;
+      }
+    }
+  }
+
+  @keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  
+  .animated-title {
+    height: 40vh;
+    width: 100%;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 3em;
+    padding: 10px 0;
+    position: absolute;
+  }
+  .animated-title > div div .text {
+    display: block;
+  }
+  .animated-title > div.text-top-container {
+    width: 100%;
+    margin: 0;
+    // border-bottom: 1px solid #C7D5DE;
+    top: 0;
+  }
+  .animated-title > div.text-top-container div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+    width: 100%;
+  }
+  .animated-title > div.text-bottom-container {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom-container div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }

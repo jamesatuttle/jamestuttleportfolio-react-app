@@ -1,0 +1,80 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo_container {
+      width: 250px;
+  
+      .logo {
+        width: 100%;
+      }
+    }
+  
+    ul {
+      display: inline;
+      li {
+        display: inline;
+        list-style: none;
+        margin-right: 30px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    a {
+        text-transform: uppercase;
+        color: #30587A;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        position: relative;
+        white-space: nowrap;
+    }
+  
+    a::before,
+    a::after {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: currentColor;
+        top: 100%;
+        left: 0;
+        pointer-events: none;
+    }
+  
+    a::before {
+        content: '';
+    }
+  
+    a::before {
+        height: 3px;
+        border-radius: 10px;
+        transform: scale3d(1, 1, 1);
+        transition: transform 0.2s, opacity 0.2s;
+        transition-timing-function: cubic-bezier(0.2, 0.57, 0.67, 1.53);
+    }
+  
+    a:hover::before, a:focus::before {
+        transition-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+        transition-duration: 0.4s;
+        opacity: 1;
+        transform: scale3d(1.2, 0.1, 1);
+    }
+  
+    a span {
+        transform: translate3d(0, -4px, 0);
+        display: inline-block;
+        transition: transform 0.2s 0.05s cubic-bezier(0.2, 0.57, 0.67, 1.53);
+    }
+  
+    a:hover span, a:focus span {
+        transform: translate3d(0, 0, 0);
+        transition-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+        transition-duration: 0.4s;
+        transition-delay: 0s;
+    }
+  }
