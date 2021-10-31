@@ -90,39 +90,15 @@ h2 {
     background-color: #75D3C3; }
 
 header {
-  margin: 25px 20%; }
+  margin: 25px 15%; }
 
 section {
-  margin: 100px 20% 100px 20%;
-  border-bottom: 1px solid rgba(123, 132, 139, 0.3);
-  padding: 0 0 100px 0; }
+  margin: 0;
+  padding: 100px 15%; }
 
 p {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 16px; }
-
-section#intro {
-  margin: 25px 10% 0 10%;
-  padding: 0;
-  min-height: calc(100vh - 100px);
-  position: relative;
-  border-bottom: 0; }
-  section#intro .intro {
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 45%;
-    font-weight: bold;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    section#intro .intro h2 {
-      font-size: 4em;
-      padding: 0;
-      margin: 0 auto 64px auto;
-      border-bottom: 2px solid #30587A; }
-    section#intro .intro .button_container {
-      text-align: center; }
 
 @keyframes showTopText {
   0% {
@@ -131,46 +107,25 @@ section#intro {
     transform: translate3d(0, 100%, 0); }
   100% {
     transform: translate3d(0, 0, 0); } }
-.animated-title {
-  height: 40vh;
-  width: 100%; }
-
-.animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%; }
-
-.animated-title > div div {
-  font-size: 3em;
-  padding: 10px 0;
-  position: absolute; }
-
-.animated-title > div div .text {
-  display: block; }
-
-.animated-title > div.text-top-container {
-  width: 100%;
-  margin: 0;
-  top: 0; }
-
-.animated-title > div.text-top-container div {
-  animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  bottom: 0;
-  transform: translate(0, 100%);
-  width: 100%; }
-
-.animated-title > div.text-bottom-container {
-  bottom: 0; }
-
-.animated-title > div.text-bottom-container div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%); }
+section#intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 100px;
+  min-height: calc(100vh - 200px); }
+  section#intro .heading-text h2 {
+    font-size: 3em;
+    text-transform: inherit;
+    color: inherit; }
+    section#intro .heading-text h2::after {
+      display: none; }
+  section#intro .imageContainer {
+    width: 40%; }
+    section#intro .imageContainer img {
+      width: 100%; }
 
 nav {
   display: flex;
