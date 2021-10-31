@@ -455,4 +455,19 @@ footer {
 #random-number-generator .output_container #output {
   font-size: 2em; }
 
+#drawings-using-css h1 + p {
+  margin-bottom: 50px; }
+#drawings-using-css .drawing_and_info_container {
+  margin-bottom: 100px; }
+  #drawings-using-css .drawing_and_info_container .image_with_text .container {
+    border: 1px solid #58839d44;
+    -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 3%;
+    border-radius: 20px; }
+    #drawings-using-css .drawing_and_info_container .image_with_text .container img {
+      height: 200px; }
+
 /*# sourceMappingURL=main.css.map */

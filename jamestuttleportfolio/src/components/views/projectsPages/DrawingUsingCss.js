@@ -14,7 +14,7 @@ class DrawingUsingCss extends React.Component {
           <p>A collection of drawings I've made using pure CSS to practice my skills using pseudo selectors, z-index layering, shadow, shading, etc.</p>
           <div className='drawing_and_info_container'>
             <h2>Monitor</h2>
-            <div className='image-with-text'>
+            <div className='image_with_text'>
               <div className='container'>
                 <img id='monitor_image' alt="monitor created using css" src={monitor}/>
               </div>
@@ -26,7 +26,7 @@ class DrawingUsingCss extends React.Component {
           </div>
           <div className='drawing_and_info_container'>
             <h2>Coffee</h2>
-            <div className='image-with-text'>
+            <div className='image_with_text'>
               <div className='container'>
                 <img id='coffee_cup_image' alt="coffee cup with coffee beans created using css" src={coffee}/>
               </div>
@@ -38,7 +38,7 @@ class DrawingUsingCss extends React.Component {
           </div>
           <div className='drawing_and_info_container'>
             <h2>Bear</h2>
-            <div className='image-with-text'>
+            <div className='image_with_text'>
               <div className='container'>
                 <img id='bear_image' alt="bear created using css" src={bear}/>
               </div>
