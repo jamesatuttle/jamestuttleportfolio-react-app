@@ -16,7 +16,8 @@ section#intro {
   min-height: calc(100vh - 200px);
   
   .heading-text {
-    h2 {
+    h1 {
+      text-align: left;
       font-size: 3em;
       text-transform: inherit;
       color: inherit;

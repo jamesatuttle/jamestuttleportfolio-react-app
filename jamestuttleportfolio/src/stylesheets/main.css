@@ -148,11 +148,12 @@ section#intro {
   padding-top: 0;
   padding-bottom: 100px;
   min-height: calc(100vh - 200px); }
-  section#intro .heading-text h2 {
+  section#intro .heading-text h1 {
+    text-align: left;
     font-size: 3em;
     text-transform: inherit;
     color: inherit; }
-    section#intro .heading-text h2::after {
+    section#intro .heading-text h1::after {
       display: none; }
   section#intro .imageContainer {
     width: 40%; }
