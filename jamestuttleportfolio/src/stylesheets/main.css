@@ -370,8 +370,6 @@ footer {
   background-color: #102D40;
   padding: 2% 20%;
   color: white; }
-  footer img {
-    height: 40px; }
   footer a {
     text-transform: uppercase;
     font-weight: bold;
@@ -381,9 +379,9 @@ footer {
     margin-right: 10px;
     vertical-align: middle;
     padding: 10px 5px; }
-  footer svg {
-    fill: white;
-    color: white; }
+    footer a svg {
+      color: white;
+      height: 40px; }
   footer .copyright {
     font-size: 0.8em;
     font-weight: normal;
