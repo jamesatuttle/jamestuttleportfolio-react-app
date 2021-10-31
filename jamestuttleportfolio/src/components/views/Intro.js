@@ -8,7 +8,7 @@ class Intro extends React.Component {
           <div className="animated-title">
             <div className="text-top-container">
               <div>
-                <span className='text'>Hi! I’m <span className='highlight'>James</span>. Welcome to my <span className='highlight'>Portfolio</span>.</span>
+                <span className='text'>Hi, I’m <span className='highlight'>James</span>. Welcome to my <span className='highlight'>Portfolio</span>.</span>
               </div>
             </div>
           </div>

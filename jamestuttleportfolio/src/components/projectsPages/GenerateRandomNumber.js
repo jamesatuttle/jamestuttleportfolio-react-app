@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'
+import PageLayout from '../views/PageLayout';
 import { Link } from 'react-router-dom';
 import facts from '../../scripts/funFacts';
 
-class RandomNumberGenerator extends React.Component {
+class GenerateRandomNumber extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -93,7 +94,9 @@ class RandomNumberGenerator extends React.Component {
 
   render() {
     return (
-      <section>
+      <div>
+        <PageLayout page="random-number-generator">
+        <section>
         <div className='breadcrumb-navigation'><Link to='/projects'>Projects</Link><span>Random Number Generator</span></div>
         <h1>RANDOM NUMBER GENERATOR</h1>
         <p>A simple tool built in Javascript which takes in a minimum and maximum number and produces a random number between, making use of React state.</p>
@@ -124,8 +127,10 @@ class RandomNumberGenerator extends React.Component {
           </div>
         </div>
       </section>
+        </PageLayout>
+      </div>
     );
   }
 };
 
-export default RandomNumberGenerator
+export default GenerateRandomNumber

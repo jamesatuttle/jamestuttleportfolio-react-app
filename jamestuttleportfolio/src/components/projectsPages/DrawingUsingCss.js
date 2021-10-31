@@ -1,13 +1,15 @@
 import React from 'react'
+import PageLayout from '../views/PageLayout';
 import monitor from '../../assets/images/monitor.png';
 import coffee from '../../assets/images/coffee.png';
 import bear from '../../assets/images/bear.png';
 import { Link } from 'react-router-dom';
 
-class DrawingsContainer extends React.Component {
+class DrawingUsingCss extends React.Component {
   render() {
     return (
-      <div>
+      <PageLayout page="drawings-using-css">
+        <div>
         <div className='breadcrumb-navigation'><Link to='/projects'>Projects</Link><span>Drawings Using CSS</span></div>
         <h1>DRAWINGS USING CSS</h1>
         <p>A collection of drawings I've made using pure CSS to practice my skills using pseudo selectors, z-index layering, shadow, shading, etc.</p>
@@ -48,8 +50,9 @@ class DrawingsContainer extends React.Component {
           </div>
         </div>
       </div>
+      </PageLayout>
     );
   }
 };
 
-export default DrawingsContainer;
+export default DrawingUsingCss

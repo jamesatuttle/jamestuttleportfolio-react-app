@@ -1,25 +1,18 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
+import Navigation from './Navigation';
 
 class Header extends React.Component {
   render() {
+    const {page} = this.props
+
     return (
       <header>
         <nav>
           <div className='logo_container'>
             <img className='logo' src={logo} alt="James Tuttle Portfolio logo" />
           </div>
-          <ul>
-            <li>
-              <a href="#about"><span>About</span></a>
-            </li>
-            <li>
-              <a href="#projects"><span>Projects</span></a>
-            </li>
-            <li>
-              <a href="#contact"><span>Contact</span></a>
-            </li>
-          </ul>
+          <Navigation page={page}/>
         </nav>
       </header>
     );

@@ -1,13 +1,16 @@
-import React from 'react';
+import React from 'react'
+import PageLayout from '../views/PageLayout';
 import website_version_one from '../../assets/images/website_version_one.png';
 import website_version_two from '../../assets/images/website_version_two.png';
 import website_version_three from '../../assets/images/website_version_three.png';
 import { Link } from 'react-router-dom';
 
-class ReactAppProject extends React.Component {
-    render() {
-        return (
-            <section>
+class ReactAppProjectPage extends React.Component {
+  render() {
+    return (
+      <div>
+        <PageLayout page="random-number-generator">
+        <section>
                 <div className='breadcrumb-navigation'><Link to='/projects'>Projects</Link><span>This React App</span></div>
                 <h1>THIS REACT APP</h1>
                 <p>This site was originally built using pure CSS and HTML with a little bit of JavaScript for the hamburger navigation which was previously used.</p>
@@ -54,8 +57,10 @@ class ReactAppProject extends React.Component {
                     </div>
                 </div>
             </section>
-        )
-     }
-}
+        </PageLayout>
+      </div>
+    );
+  }
+};
 
-export default ReactAppProject;
+export default ReactAppProjectPage

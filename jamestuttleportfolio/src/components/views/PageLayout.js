@@ -8,7 +8,7 @@ class PageLayout extends React.Component {
 
     return (
       <main id={page}>
-        <Header />
+        <Header page={page}/>
         {this.props.children}
         <Footer />
       </main>

@@ -1,9 +1,9 @@
 import React from 'react'
 import PageLayout from './PageLayout';
 import Intro from './Intro';
-import About from '../sub_views/About';
-import Projects from '../sub_views/Projects';
-import Contact from '../sub_views/Contact';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
 
 class Home extends React.Component {
   render() {
