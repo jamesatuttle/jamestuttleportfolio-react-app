@@ -40,4 +40,16 @@ input[type='submit'] {
             box-shadow: 5px 5px #C7D5DE;
         }
     }
+
+    &:disabled {
+        background-color: #75d3c33a;
+        border: 2px solid #75d3c33a;
+
+        &:hover {
+            background-color: #75d3c33a;
+            color: white;
+            box-shadow: 2px 2px #CAEEE8;
+            cursor: default;
+        }
+    }
   }

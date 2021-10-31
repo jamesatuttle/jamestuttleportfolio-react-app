@@ -1,0 +1,33 @@
+#random-number-generator {
+    form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 50px 0;
+        width: 450px;
+        margin: 0;
+        text-align: center;
+        border-radius: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .input_container:last-of-type {
+            text-align: left;
+        }
+
+        .validation {
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+    }
+
+    .output_container {
+        #output {
+            font-size: 2em;
+        }
+    }
+}

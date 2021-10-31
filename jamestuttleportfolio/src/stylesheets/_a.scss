@@ -42,4 +42,10 @@ a {
         }
       }
     }
+
+    &.text {
+      font-weight: bold;
+      color: #30587A;
+      text-decoration-thickness: 3px;
+    }
   }

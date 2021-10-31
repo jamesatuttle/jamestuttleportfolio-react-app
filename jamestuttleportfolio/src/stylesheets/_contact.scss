@@ -41,27 +41,6 @@ section#contact {
         font-weight: bold;
         text-align: left;
       }
-  
-      input[type='text'], input[type='email'], textarea {
-        width: calc(94% - 4px);
-        border: 2px solid #75D3C3;
-        border-radius: 10px;
-        padding: 3% 3%;
-        margin-bottom: 30px;
-  
-        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-          color: rgb(208,217,224);
-        }
-        &::-moz-placeholder { /* Firefox 19+ */
-          color: rgb(208,217,224);
-        }
-        &:-ms-input-placeholder { /* IE 10+ */
-          color: rgb(208,217,224);
-        }
-        &:-moz-placeholder { /* Firefox 18- */
-          color: rgb(208,217,224);
-        }
-      }
 
       p {
         font-size: 1.1em;

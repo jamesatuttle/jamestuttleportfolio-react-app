@@ -94,17 +94,14 @@ class GenerateRandomNumber extends React.Component {
 
   render() {
     return (
-      <div>
-        <PageLayout page="random-number-generator">
+      <PageLayout page="random-number-generator">
         <section>
-        <div className='breadcrumb-navigation'><Link to='/projects'>Projects</Link><span>Random Number Generator</span></div>
-        <h1>RANDOM NUMBER GENERATOR</h1>
-        <p>A simple tool built in Javascript which takes in a minimum and maximum number and produces a random number between, making use of React state.</p>
-        <p>There is also a JSON collection in the background with random number facts/trivia, if you hit the right number you'll get a fact! Take a look and have a play around.</p>
-        <p>Javascript code can be found on GitHub <a href='https://github.com/jamesatuttle/jamestuttleportfolio-react-app/blob/main/jamestuttleportfolio/src/components/RandomNumberGenerator.js' className="text">here</a>.</p>
-        <div id='form-container'>
-          <form onSubmit={this.handleSubmit}>
-            <fieldset>
+          <h1>RANDOM NUMBER GENERATOR</h1>
+          <p>A simple tool built in Javascript which takes in a minimum and maximum number and produces a random number between, making use of React state.</p>
+          <p>There is also a JSON collection in the background with random number facts/trivia, if you hit the right number you'll get a fact! Take a look and have a play around.</p>
+          <p>Javascript code can be found on GitHub <a href='https://github.com/jamesatuttle/jamestuttleportfolio-react-app/blob/main/jamestuttleportfolio/src/components/RandomNumberGenerator.js' className="text">here</a>.</p>
+          <div id='form-container'>
+            <form onSubmit={this.handleSubmit}>
               <div className='input_container'>
                 <label htmlFor='min'>Minimum Number</label>
                 <input type='number' name='minNumber' value={this.state.minNumber} onChange={this.handleInputChange} required />
@@ -116,19 +113,17 @@ class GenerateRandomNumber extends React.Component {
                 <p className='validation'>{this.state.maxValidation}</p>
               </div>
               <div className='input_container'>
-                <input type='submit' value='Generate random number' disabled={this.state.isFormInvalid}/>
+                <input className='primary' type='submit' value='Generate random number' disabled={this.state.isFormInvalid}/>
               </div>
-            </fieldset>
-          </form>
-          <div className='output_container'>
-            <p>Your randomly generated number is:</p>
-            <p id='output'>{this.state.output}</p>
-            <p id='facts'>{this.state.fact}</p>
+            </form>
+            <div className='output_container'>
+              <p>Your randomly generated number is:</p>
+              <p id='output'>{this.state.output}</p>
+              <p id='facts'>{this.state.fact}</p>
+            </div>
           </div>
-        </div>
-      </section>
-        </PageLayout>
-      </div>
+        </section>
+      </PageLayout>
     );
   }
 };
