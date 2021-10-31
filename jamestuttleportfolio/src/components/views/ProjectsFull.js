@@ -11,7 +11,7 @@ class ProjectsFull extends React.Component {
     return (
         <PageLayout page="projects">
           <section id='projects'>
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <div className='projectsIntro'>
               <p>Take a look at the Projects I’ve been working on, from building simple to complex pictures using CSS, to seeing what I can make in JavaScript.</p>
               <p>I’m always adding to this to keep coming back to check on what’s new!</p>
