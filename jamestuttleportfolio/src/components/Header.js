@@ -10,7 +10,8 @@ class Header extends React.Component {
       <header>
         <nav>
           <div className='logo_container'>
-            <img className='logo' src={logo} alt="James Tuttle Portfolio logo" />
+            {/* <img className='logo' src={logo} alt="James Tuttle Portfolio logo" /> */}
+            James Tuttle
           </div>
           <Navigation page={page}/>
         </nav>

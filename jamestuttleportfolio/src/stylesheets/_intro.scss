@@ -11,9 +11,8 @@ section#intro {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0;
-  padding-bottom: 100px;
-  min-height: calc(100vh - 200px);
+  padding: 100px 15%;
+  min-height: calc(100vh - 400px);
   
   .heading-text {
     h1 {

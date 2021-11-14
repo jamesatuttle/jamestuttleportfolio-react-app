@@ -29,13 +29,13 @@ a {
       }
   
       &.secondary {
-        background-color: #30587A;
-        border: 2px solid #30587A;
+        border: 2px solid #75D3C3;
+        color: #75D3C3;
         box-shadow: 2px 2px #C7D5DE;
   
         &:hover, &:focus {
           background-color: transparent;
-          color: #30587A;
+          // color: #30587A;
           cursor: pointer;
           transition-duration: 0.3s;
           box-shadow: 5px 5px #C7D5DE;

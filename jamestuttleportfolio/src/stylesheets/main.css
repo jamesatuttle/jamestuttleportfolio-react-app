@@ -72,12 +72,11 @@ a.button_style {
       transition-duration: 0.3s;
       box-shadow: 5px 5px #CAEEE8; }
   a.button_style.secondary {
-    background-color: #30587A;
-    border: 2px solid #30587A;
+    border: 2px solid #75D3C3;
+    color: #75D3C3;
     box-shadow: 2px 2px #C7D5DE; }
     a.button_style.secondary:hover, a.button_style.secondary:focus {
       background-color: transparent;
-      color: #30587A;
       cursor: pointer;
       transition-duration: 0.3s;
       box-shadow: 5px 5px #C7D5DE; }
@@ -92,7 +91,7 @@ h1 {
   color: #30587A;
   padding: 0 0 50px 0;
   margin: 0 0 0 0;
-  text-align: center; }
+  color: #75D3C3; }
 
 h2 {
   text-transform: uppercase;
@@ -123,10 +122,18 @@ h4 {
 
 header {
   margin: 25px 15%; }
+  header .logo_container {
+    font-size: 1.3em;
+    text-align: left;
+    margin: auto 0;
+    padding: 0;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 section {
   margin: 0;
-  padding: 100px 15%; }
+  padding: 50px 15%;
+  min-height: calc(100vh - 300px); }
 
 p {
   font-size: 1em;
@@ -145,9 +152,8 @@ section#intro {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0;
-  padding-bottom: 100px;
-  min-height: calc(100vh - 200px); }
+  padding: 100px 15%;
+  min-height: calc(100vh - 400px); }
   section#intro .heading-text h1 {
     text-align: left;
     font-size: 3em;
@@ -218,12 +224,7 @@ nav {
     transition-delay: 0s; }
 
 section#about {
-  background-image: url(../assets/images/background-full-3.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: calc(100vh - 200px);
-  margin: 100px 0; }
+  min-height: calc(100vh - 200px); }
   section#about svg {
     height: 1.3em;
     margin-right: 10px;
@@ -238,7 +239,7 @@ section#about {
     max-width: 60%; }
 
 section#projects {
-  min-height: calc(100vh - 200px); }
+  min-height: calc(100vh - 100px); }
   section#projects .projectsIntro {
     margin-bottom: 50px; }
     section#projects .projectsIntro p:first-of-type {
@@ -354,30 +355,31 @@ input[type='text'], input[type='email'], textarea, input[type='number'] {
     color: #d0d9e0; }
 
 section#contact {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../assets/images/contact_bg.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  padding: 100px 10%;
   margin: 0; }
-  section#contact h2 {
-    text-align: center; }
-    section#contact h2::after {
-      content: "";
-      display: block;
-      height: 5px;
-      width: 30px;
-      top: 10px;
-      left: calc(50% - 15px);
-      position: relative;
-      background-color: #75D3C3; }
+  section#contact h2::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 30px;
+    top: 10px;
+    left: calc(50% - 15px);
+    position: relative;
+    background-color: #75D3C3; }
+  section#contact .twoColumn {
+    min-height: calc(100vh - 400px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center; }
   section#contact form {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 3%;
-    width: 450px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 20px; }
+    padding: 0;
+    width: 450px; }
     section#contact form legend {
       font-size: 1.5em;
       font-weight: bold;
@@ -401,40 +403,29 @@ section#contact {
       section#contact form span svg {
         width: 25px;
         transform: rotate(20deg); }
+  section#contact .buttons {
+    width: 50%; }
+    section#contact .buttons .emailLink a {
+      color: inherit;
+      text-decoration: none; }
+    section#contact .buttons div {
+      margin-top: 30px; }
 
 footer {
-  background-color: #102D40;
   padding: 2% 15%;
-  color: white; }
-  footer a {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    border: none;
-    margin-right: 10px;
-    vertical-align: middle;
-    padding: 10px 5px; }
-    footer a svg {
-      color: white;
-      height: 40px; }
-  footer .copyright {
-    font-size: 0.8em;
-    font-weight: normal;
-    width: 50%;
-    display: inline-block; }
-  footer .links {
-    text-align: right;
-    width: 50%;
-    display: inline-block; }
+  color: #102D40;
+  font-weight: bold;
+  font-size: 0.7em; }
 
 .highlight {
   color: #75D3C3; }
 
 .bigger {
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-weight: bold; }
 
+#random-number-generator p {
+  max-width: 60ch; }
 #random-number-generator form {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 50px 0;
@@ -458,6 +449,8 @@ footer {
 
 #drawings-using-css h1 + p {
   margin-bottom: 50px; }
+#drawings-using-css p {
+  max-width: 60ch; }
 #drawings-using-css .drawing_and_info_container {
   margin-bottom: 100px; }
   #drawings-using-css .drawing_and_info_container .image_with_text .container {
@@ -470,5 +463,8 @@ footer {
     border-radius: 20px; }
     #drawings-using-css .drawing_and_info_container .image_with_text .container img {
       height: 200px; }
+
+#this-react-app p {
+  max-width: 60ch; }
 
 /*# sourceMappingURL=main.css.map */

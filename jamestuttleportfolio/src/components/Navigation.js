@@ -13,13 +13,16 @@ class Navigation extends React.Component {
     return (
       <ul>
         <li>
-          <a href="#about"><span>About</span></a>
+          <Link to='/'><span>Home</span></Link>
         </li>
         <li>
-          <a href="#projects"><span>Projects</span></a>
+          <Link to='/about'><span>About</span></Link>
         </li>
         <li>
-          <a href="#contact"><span>Contact</span></a>
+          <a href="/projects"><span>Projects</span></a>
+        </li>
+        <li>
+          <a href="/contact"><span>Contact</span></a>
         </li>
       </ul>
     );
@@ -40,7 +43,7 @@ class Navigation extends React.Component {
 
     return (
       <nav role="navigation">
-        {page === 'home' ? this.displayHomeNavigationLinks() : this.displayHomeLink()}
+        {this.displayHomeNavigationLinks()}
         
       </nav>
     );

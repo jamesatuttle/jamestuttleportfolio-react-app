@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import SmileyFace from '../svgs/SmileyFace';
+import PageLayout from './PageLayout';
 
 class Contact extends React.Component {
 
@@ -49,24 +50,38 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <section id='contact'>
-        <h2>GET IN TOUCH</h2>
-        <form onSubmit={this.handleSubmit}>
-          <legend>Email me using the form below or at contact@jamestuttleportfolio.co.uk</legend>
-          <label htmlFor='name'>Name</label>
-          <input type='text' id='from_name' name='from_name' placeholder="E.g. Joanne Smith" value={this.state.from_name} onChange={this.handleInputChange} required/>
+      <PageLayout page="home">
+        <section id='contact'>
+          <h1>Contact me</h1>
+          <div className='twoColumn'>
+            <form onSubmit={this.handleSubmit}>
+              <label htmlFor='name'>Name</label>
+              <input type='text' id='from_name' name='from_name' placeholder="E.g. Joanne Smith" value={this.state.from_name} onChange={this.handleInputChange} required/>
 
-          <label htmlFor='email'>Email</label>
-          <input type='email' id='from_email' name='from_email' placeholder="E.g. hi@your-email.com" value={this.state.from_email} onChange={this.handleInputChange} required />
+              <label htmlFor='email'>Email</label>
+              <input type='email' id='from_email' name='from_email' placeholder="E.g. hi@your-email.com" value={this.state.from_email} onChange={this.handleInputChange} required />
 
-          <label htmlFor='message'>Message</label>
-          <textarea id='message' name='message' value={this.state.message} onChange={this.handleInputChange} required></textarea>
+              <label htmlFor='message'>Message</label>
+              <textarea id='message' name='message' value={this.state.message} onChange={this.handleInputChange} required></textarea>
 
-          <input type='submit' value="Send Email" className='primary'/>
-          {this.state.emailSentSuccessful ? <span><p>Email sent successfully</p><SmileyFace /></span> : ''}
-          {this.state.emailError ? <p>Woops, there seems to be a problem. Try again but if it continues, email me at <a href="mailto:contact@jamestuttleportfolio.co.uk">contact@jamestuttleportfolio.co.uk</a></p> : ''}
-        </form>
-    </section>
+              <input type='submit' value="Send Email" className='primary'/>
+              {this.state.emailSentSuccessful ? <span><p>Email sent successfully</p><SmileyFace /></span> : ''}
+              {this.state.emailError ? <p>Woops, there seems to be a problem. Try again but if it continues, email me at <a href="mailto:contact@jamestuttleportfolio.co.uk">contact@jamestuttleportfolio.co.uk</a></p> : ''}
+            </form>
+            <div className='buttons'>
+              <span>Email me using the form below or at:</span><br/>
+              <span class='highlight bigger emailLink'><a href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a></span><br/>
+              <small>(Click to open in your email client)</small>
+              <div>
+                <a href='https://www.jamestuttleportfolio.co.uk/James_Tuttle_CV.pdf' className='button_style primary'>Download CV</a>
+                <a href='https://github.com/jamesatuttle' className='button_style secondary'>Github</a>
+                <a href='https://www.linkedin.com/in/jamesatuttle/' className='button_style secondary'>LinkedIn</a>
+                <a href='https://codepen.io/jamestuttle/pens/' className='button_style secondary'>Codepen</a>
+              </div>
+            </div>
+          </div>
+      </section>
+    </PageLayout>
     );
   }
 };
