@@ -27,6 +27,10 @@
             margin-bottom: 30px;
             text-align: left;
         }
+
+        @media only screen and (max-width: 560px) {
+            width: 100%;
+        }
     }
 
     .output_container {

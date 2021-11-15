@@ -69,7 +69,7 @@ class Contact extends React.Component {
               {this.state.emailError ? <p>Woops, there seems to be a problem. Try again but if it continues, email me at <a href="mailto:contact@jamestuttleportfolio.co.uk">contact@jamestuttleportfolio.co.uk</a></p> : ''}
             </form>
             <div className='buttons'>
-              <span>Email me using the form below or at:</span><br/>
+              <span>Email me using the form or at:</span><br/>
               <span class='highlight bigger emailLink'><a href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a></span><br/>
               <small>(Click to open in your email client)</small>
               <div>

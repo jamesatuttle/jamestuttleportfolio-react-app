@@ -1,21 +1,36 @@
 section#about {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 300px);
 
   svg {
     height: 1.3em;
     margin-right: 10px;
     display: inline-block;
     vertical-align: baseline;
+    color: #75D3C3;
+  }
+
+  h2 {
+    display: inline-block;
   }
 
   h3 {
-    display: inline-block;
-    margin-bottom: 10px;
+    font-size: 1.1em;
+    padding: 0 0 0 0;
+    margin: 0;
+    color: #30587A;
   }
 
   p {
     margin: 0 0 40px 0;
     padding: 0;
     max-width: 60%;
+
+    @media only screen and (max-width: 1100px) {
+      max-width: 80%;
+    }
+
+    @media only screen and (max-width: 750px) {
+      max-width: 100%;
+    }
   }
 }

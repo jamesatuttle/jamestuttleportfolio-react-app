@@ -44,7 +44,6 @@ class Navigation extends React.Component {
     return (
       <nav role="navigation">
         {this.displayHomeNavigationLinks()}
-        
       </nav>
     );
   }

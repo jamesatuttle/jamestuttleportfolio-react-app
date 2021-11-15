@@ -2,4 +2,16 @@ section {
     margin: 0;
     padding: 50px 15%;
     min-height: calc(100vh - 300px);
+
+    @media only screen and (max-width: 840px) {
+      padding: 50px 10%;
+    }
+
+    @media only screen and (max-width: 650px) {
+      padding: 25px 10% 50px 10%;
+    }
+
+    @media only screen and (max-width: 350px) {
+      min-height: calc(100vh - 300px);
+    }
   }

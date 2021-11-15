@@ -5,6 +5,7 @@ import Javascipt from '../svgs/Javascript';
 import Pencil from '../svgs/Pencil';
 import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
+import ProjectTile from '../ProjectTile';
 
 class Projects extends React.Component {
   render() {
@@ -18,29 +19,17 @@ class Projects extends React.Component {
             </div>
 
             <div className='projectSection'>
-              <Javascipt/><h3>JavaScript</h3>
+              <Javascipt/><h2>JavaScript</h2>
               <div className='projects_container'>
-                <div className='project_tile'>
-                    <h3>Random number generator</h3><Javascipt/>
-                    <p>September 2021</p>
-                    <Link to='/projects/random-number-generator'>Take a look</Link>
-                </div>
-                <div className='project_tile'>
-                    <h3>This React App</h3><Javascipt/>
-                    <p>September 2021</p>
-                    <Link to='/projects/this-react-app'>Take a look</Link>
-                </div>
+                <ProjectTile title='Random number generator' icon={<Javascipt/>} date='September 2021' link='random-number-generator'/>
+                <ProjectTile title='This react app' icon={<Javascipt/>} date='September 2021' link='this-react-app'/>
               </div>
             </div>
 
             <div className='projectSection'>
-              <Css3/><h3>CSS</h3>
+              <Css3/><h2>CSS</h2>
               <div className='projects_container'>
-                <div className='project_tile'>
-                    <h3>Drawings using css</h3><Css3/>
-                    <p>September 2021</p>
-                    <Link to='/projects/drawing-using-css'>Take a look</Link>
-                </div>
+                <ProjectTile title='Drawings using CSS' icon={<Css3/>} date='September 2021' link='drawing-using-css'/>
               </div>
             </div>
           </section>

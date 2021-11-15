@@ -23,8 +23,24 @@
 
                 img {
                     height: 200px;
+
+                    @media only screen and (max-width: 600px) {
+                        height: 150px;
+                    }
+
+                    @media only screen and (max-width: 370px) {
+                        height: 100px;
+                    }
+                }
+
+                @media only screen and (max-width: 370px) {
+                    padding: 5%;
                 }
             }
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 }

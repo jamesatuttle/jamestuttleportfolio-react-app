@@ -34,6 +34,44 @@ section#intro {
       width: 100%;
     }
   }
+
+  @media only screen and (max-width: 800px) {
+    padding: 100px 10%;
+
+    .imageContainer {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 0 10% 50px 10%;
+    min-height: calc(100vh - 250px);
+
+    .heading-text {
+      text-align: center;
+
+      h1 {
+        text-align: inherit;
+        padding-bottom: 50px;
+      }
+    }
+
+    .imageContainer {
+      width: 250px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .heading-text {
+      a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
   
   

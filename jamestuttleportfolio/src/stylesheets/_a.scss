@@ -9,6 +9,7 @@ a {
       border-radius: 12px;
       margin-right: 10px;
       transition-duration: 0.3s;
+      white-space: nowrap;
   
       &:last-child {
         margin-right: 0;
@@ -20,11 +21,11 @@ a {
         box-shadow: 2px 2px #CAEEE8;
   
         &:hover, &:focus {
-          background-color: transparent;
-          color: #75D3C3;
+          // background-color: transparent;
+          // color: #75D3C3;
           cursor: pointer;
           transition-duration: 0.3s;
-          box-shadow: 5px 5px #CAEEE8;
+          box-shadow: 5px 5px #C7D5DE;
         }
       }
   

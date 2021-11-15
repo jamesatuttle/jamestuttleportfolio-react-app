@@ -5,4 +5,12 @@
 .bigger {
   font-size: 1.5em;
   font-weight: bold;
+  
+  @media only screen and (max-width: 1220px) {
+    font-size: 1.3em;
+  }
+
+  @media only screen and (max-width: 390px) {
+    font-size: 1.1em;
+  }
 }
