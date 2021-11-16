@@ -98,7 +98,7 @@ class GenerateRandomNumber extends React.Component {
           <h1>RANDOM NUMBER GENERATOR</h1>
           <p>A simple tool built in Javascript which takes in a minimum and maximum number and produces a random number between, making use of React state.</p>
           <p>There is also a JSON collection in the background with random number facts/trivia, if you hit the right number you'll get a fact! Take a look and have a play around.</p>
-          <p>Javascript code can be found on GitHub <a href='https://github.com/jamesatuttle/jamestuttleportfolio-react-app/blob/main/jamestuttleportfolio/src/components/RandomNumberGenerator.js' className="text">here</a>.</p>
+          <p>Javascript code can be found on GitHub <a href='https://github.com/jamesatuttle/jamestuttleportfolio-react-app/blob/main/jamestuttleportfolio/src/components/views/projectsPages/GenerateRandomNumber.js' className="text">here</a>.</p>
           <div id='form-container'>
             <form onSubmit={this.handleSubmit}>
               <div className='input_container'>
