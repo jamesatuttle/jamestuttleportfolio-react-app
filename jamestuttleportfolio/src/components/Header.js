@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/images/logo.png';
 import Navigation from './Navigation';
 
 class Header extends React.Component {
@@ -10,7 +9,6 @@ class Header extends React.Component {
       <header>
         <nav>
           <div className='logo_container'>
-            {/* <img className='logo' src={logo} alt="James Tuttle Portfolio logo" /> */}
             James Tuttle
           </div>
           <Navigation page={page}/>

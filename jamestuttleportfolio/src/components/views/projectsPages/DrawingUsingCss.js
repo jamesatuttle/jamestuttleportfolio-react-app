@@ -3,7 +3,6 @@ import PageLayout from '../PageLayout';
 import monitor from '../../../assets/images/monitor.png';
 import coffee from '../../../assets/images/coffee.png';
 import bear from '../../../assets/images/bear.png';
-import { Link } from 'react-router-dom';
 
 class DrawingUsingCss extends React.Component {
   render() {

@@ -1,8 +1,5 @@
 import React from 'react'
 import PageLayout from './PageLayout';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
 import introImage from '../../assets/images/introImage.jpg';
 
 class Home extends React.Component {
@@ -15,8 +12,8 @@ class Home extends React.Component {
                 <a className='button_style primary' href='/projects'>See my projects</a>
                 <a className='button_style secondary' href='/contact'>Contact me</a>
               </div>
-              <div class='imageContainer'>
-                <img src={introImage} />
+              <div className='imageContainer'>
+                <img src={introImage} alt='man with black hair sitting at a computer at a desk' />
               </div>
           </section>
         </PageLayout>

@@ -1,6 +1,5 @@
 import React from 'react'
 import PageLayout from '../PageLayout';
-import { Link } from 'react-router-dom';
 import facts from '../../../scripts/funFacts';
 
 class GenerateRandomNumber extends React.Component {

@@ -1,9 +1,6 @@
 import React from 'react';
-import ChevronRight from '../svgs/ChevronRight';
 import Css3 from '../svgs/Css3';
 import Javascipt from '../svgs/Javascript';
-import Pencil from '../svgs/Pencil';
-import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import ProjectTile from '../ProjectTile';
 

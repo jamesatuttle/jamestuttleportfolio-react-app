@@ -22,12 +22,14 @@ class About extends React.Component {
           <h3>HM Revenue &amp; Customs <small>(12 Month Industrial Placement)</small></h3>
           <p>Assistant Software Developer 2015 - 2016</p>
 
+          <h3>Partnerize</h3>
+          <p>Application Support Engineer 2017 - 2018</p>
+
           <h3>Caspian</h3>
           <p>Junior Frontend Developer 2018 - 2019</p>
 
           <h3>Partnerize</h3>
-          <p>Application Support Engineer 2017 - 2018<br/>
-          Platform Support Engineer 2019 - Present</p>
+          <p>Platform Support Engineer 2019 - Present</p>
 
 
           <Swimming/><h2 id='hobbies'>Hobbies</h2>

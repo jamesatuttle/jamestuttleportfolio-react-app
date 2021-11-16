@@ -70,7 +70,7 @@ class Contact extends React.Component {
             </form>
             <div className='buttons'>
               <span>Email me using the form or at:</span><br/>
-              <span class='highlight bigger emailLink'><a href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a></span><br/>
+              <span className='highlight bigger emailLink'><a href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a></span><br/>
               <small>(Click to open in your email client)</small>
               <div>
                 <a href='https://www.jamestuttleportfolio.co.uk/James_Tuttle_CV.pdf' className='button_style primary'>Download CV</a>
