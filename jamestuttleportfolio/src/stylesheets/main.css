@@ -15,6 +15,7 @@ body, html {
       font-size: 13px; } }
 
 input[type='submit'] {
+  -webkit-appearance: none;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
@@ -207,7 +208,7 @@ section#intro {
           padding-bottom: 50px; }
       section#intro .imageContainer {
         width: 250px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     section#intro .heading-text a {
       display: block;
       margin-right: 0;
@@ -445,8 +446,9 @@ section#contact {
     align-content: center; }
     @media only screen and (max-width: 800px) {
       section#contact .twoColumn {
-        flex-direction: column-reverse;
-        gap: 50px; } }
+        flex-direction: column-reverse; }
+        section#contact .twoColumn .buttons {
+          margin-bottom: 50px; } }
   section#contact form {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0;
