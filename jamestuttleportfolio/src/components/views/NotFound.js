@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import monitor from '../../assets/images/404-monitor.png';
 import PageLayout from './PageLayout';
 
 class NotFound extends React.Component {
