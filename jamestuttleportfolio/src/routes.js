@@ -3,7 +3,7 @@ import Home from './components/views/Home';
 import DrawingUsingCss from './components/views/projectsPages/DrawingUsingCss';
 import GenerateRandomNumber from './components/views/projectsPages/GenerateRandomNumber';
 import NotFound from './components/views/NotFound';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import ReactAppProjectPage from './components/views/projectsPages/ReactAppProjectPage';
 import About from './components/views/About';
 import Contact from './components/views/Contact';
@@ -14,9 +14,7 @@ export const Routes = () => {
     <div>
       <Switch>
         <Route exact path='/home' component={Home} />
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+        <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/contact" component={Contact} />
